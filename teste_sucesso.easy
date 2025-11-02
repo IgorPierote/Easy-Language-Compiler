@@ -1,0 +1,17 @@
+
+programa
+    numero a;
+    booleano b;
+    booleano c;
+
+bloco {
+    a = 10;
+    b = verdadeiro;
+    c = nao b;
+
+    enquanto (a > 5 e c == falso) faça {
+        escreva(a);
+        a = a - 1;
+    }
+}
+fimprog;

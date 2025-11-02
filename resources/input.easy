@@ -1,0 +1,22 @@
+programa
+
+funcao vazio write(texto a){
+	escreva(a);
+}
+
+funcao numero soma(numero a, numero b)
+{
+	numero resultado;
+	resultado = a + b;
+	retorne resultado;
+}
+
+bloco{
+numero x;
+
+x = soma(1,2);
+
+write("oi");
+escreva(x);
+}
+fimprog;

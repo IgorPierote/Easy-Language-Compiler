@@ -1,0 +1,11 @@
+
+programa
+    numero a;
+    texto b;
+
+bloco {
+    a = 10;
+    b = "texto";
+    a = b; // Erro: Não pode atribuir texto a numero
+}
+fimprog;

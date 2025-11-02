@@ -1,0 +1,13 @@
+
+programa
+    numero a;
+    numero b;
+
+bloco {
+    a = 10;
+    b = 20;
+    se (a e b) faça { // Erro: 'e' requer booleanos, não números
+        escreva(a);
+    }
+}
+fimprog;

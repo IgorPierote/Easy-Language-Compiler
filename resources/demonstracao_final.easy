@@ -1,0 +1,104 @@
+programa
+    // ===================================================================
+    // DECLARAÇÃO DE VARIÁVEIS GLOBAIS (DEVE VIR PRIMEIRO)
+    // ===================================================================
+    numero versao;
+    texto autor;
+
+    // ===================================================================
+    // REQUISITO 3: Funções e Procedimentos
+    // ===================================================================
+    funcao booleano ehPar(numero n) {
+        // Exemplo de retorno de uma expressão booleana
+        retorne n % 2 == 0; 
+    }
+
+    procedimento vazio saudar(texto nome) {
+        escreva("Ola, ");
+        escreva(nome);
+        escreva("! Bem-vindo(a) a EasyLanguage.");
+    }
+
+    bloco {
+        // Atribuição a variáveis globais
+        versao = 1.0;
+        autor = "Piero";
+
+        escreva("--- INICIO DA DEMONSTRACAO FINAL ---");
+        escreva("Compilador EasyLanguage v.");
+        escreva(versao);
+        escreva("Autor: ");
+        escreva(autor);
+
+        // ===================================================================
+        // REQUISITO 1: Estruturas de Controle
+        // ===================================================================
+        escreva(""); // Linha em branco
+        escreva("--- 1. Teste de Estruturas de Controle ---");
+        
+        // Laço 'para'
+        escreva("Laco 'para' de 0 a 4 passo 2:");
+        para i de 0 ate 4 passo 2: {
+            escreva("  i = ");
+            escreva(i);
+        }
+
+        // Laço 'enquanto' com expressão complexa
+        escreva("Laco 'enquanto' com 'nao' e 'e':");
+        numero contador = 3;
+        booleano continuar = verdadeiro;
+        enquanto (contador > 0 e nao (continuar == falso)) faca: {
+            escreva("  Contador = ");
+            escreva(contador);
+            contador = contador - 1;
+        }
+
+        // ===================================================================
+        // REQUISITO 2: Sistema de Tipos e Operações
+        // ===================================================================
+        escreva("");
+        escreva("--- 2. Teste de Sistema de Tipos e Operacoes ---");
+
+        // Operadores Lógicos
+        booleano a = verdadeiro;
+        booleano b = falso;
+        escreva("a=verdadeiro, b=falso. (a e b) = ");
+        escreva(a e b); // Deve ser falso
+        escreva("(a ou b) = ");
+        escreva(a ou b); // Deve ser verdadeiro
+
+        // Arrays/Vetores
+        escreva("Teste de Vetor:");
+        numero meuVetor[3];
+        meuVetor[0] = 100;
+        meuVetor[2] = 300;
+        escreva("  Valor na posicao 2 do vetor: ");
+        escreva(meuVetor[2]); // Deve ser 300
+
+        // ===================================================================
+        // REQUISITO 3: Chamada de Funções e Procedimentos
+        // ===================================================================
+        escreva("");
+        escreva("--- 3. Teste de Chamada de Funcoes e Procedimentos ---");
+        
+        saudar("Avaliador"); // Chamada de procedimento
+        
+        escreva("A funcao 'ehPar(4)' retorna: ");
+        escreva(ehPar(4)); // Chamada de função
+        escreva("A funcao 'ehPar(5)' retorna: ");
+        escreva(ehPar(5));
+
+        // ===================================================================
+        // REQUISITO 6: Otimização (Avaliação de Constantes)
+        // ===================================================================
+        escreva("");
+        escreva("--- 6. Teste de Otimizacao ---");
+        numero otimizado;
+        otimizado = (10 + 5) * 2; // O compilador deve calcular 30
+        escreva("A expressao (10 + 5) * 2 foi otimizada para: ");
+        escreva(otimizado); // Deve imprimir 30
+
+        escreva("");
+        escreva("--- FIM DA DEMONSTRACAO ---");
+    }
+fimprog;
