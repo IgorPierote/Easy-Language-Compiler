@@ -105,6 +105,9 @@ EasyLanguage-Compiler/
 
 ---
 
+> 💡 **Dica:** Este repositório já contém um arquivo `MainClass.java` gerado previamente e localizado na raiz do projeto.  
+> Você pode usá-lo diretamente para testar a execução de programas EasyLanguage sem precisar compilar nada inicialmente.
+
 ### ▶️ Passos para Executar o Compilador
 
 1. **Clone o repositório**
