@@ -1,8 +1,3 @@
-Perfeito 👌 Aqui está um README.md completo e pronto para colocar no GitHub do seu projeto EasyLanguage Compiler, estruturado com seções claras, Markdown moderno e exemplos de uso.
-
-⸻
-
-
 # 🧠 EasyLanguage Compiler
 
 Um compilador educacional desenvolvido para demonstrar os princípios fundamentais da construção de um compilador, desde a análise léxica até a geração de código executável em Java.
