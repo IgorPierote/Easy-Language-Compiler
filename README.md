@@ -182,5 +182,5 @@ Número positivo!
 
 📚 Créditos e Autoria
 
-Desenvolvido por Igor A. Pierote
+Desenvolvido por Igor A. Pierote e Wendell Moreira Guindani
 💼 Projeto acadêmico — Faculdade FESA
