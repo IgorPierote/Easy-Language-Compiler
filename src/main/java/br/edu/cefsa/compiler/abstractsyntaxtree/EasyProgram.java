@@ -44,7 +44,7 @@ public class EasyProgram {
         str.append("}\n");
 
         try {
-            FileWriter fr = new FileWriter(new File("MainClass.java"));
+            FileWriter fr = new FileWriter(new File("resources/MainClass.java"));
             fr.write(str.toString());
             fr.close();
         } catch (Exception ex) {
